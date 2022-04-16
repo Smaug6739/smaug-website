@@ -38,20 +38,28 @@ export default {
     return {
       projects: [
         {
-          name: "Project 1",
-          description: "This is the first project",
-          link: "",
-        },
-        {
-          name: "Project 2",
+          name: "Eodomius",
+          date: "January 2022 to now",
+          image: "/public/images/eodomius.png",
           description:
-            "This is the second project<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description",
-          link: "",
+            "Eodomius is an open-source instant-chat with web client and application with Qt (C++) built with a micro-service architecture.",
+          link: "https://github.com/Eodomius",
         },
         {
-          name: "Project 3",
-          description: "This is the third project",
-          link: "",
+          name: "Sheweny",
+          date: "August 2021 to now",
+          image: "/public/images/sheweny.png",
+          description:
+            "Sheweny is a powerful framework to create discord bot with discord.js in Javascript or Typescript. It's a modular and easy to use.",
+          link: "https://github.com/Sheweny/framework",
+        },
+        {
+          name: "Werewolf-bot",
+          date: "May 2022 to now",
+          image: "/public/images/werewolf.png",
+          description:
+            "Werewolf bot is a french discord bot to play werewolf games with new discord features (emojis, embeds, buttons, select-menus...)",
+          link: "https://github.com/Smaug6739/Werewolf-bot",
         },
       ],
     };
