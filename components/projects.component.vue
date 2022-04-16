@@ -19,7 +19,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  align-items: stretch !important;
+  align-items: stretch;
 }
 .pjs {
   align-self: stretch;
@@ -38,17 +38,17 @@ export default {
     return {
       projects: [
         {
-          name: "Eodomius",
+          name: "Eodomius chat",
           date: "January 2022 to now",
-          image: "/public/images/eodomius.png",
+          image: "/images/eodomius.png",
           description:
             "Eodomius is an open-source instant-chat with web client and application with Qt (C++) built with a micro-service architecture.",
           link: "https://github.com/Eodomius",
         },
         {
-          name: "Sheweny",
+          name: "Sheweny framework",
           date: "August 2021 to now",
-          image: "/public/images/sheweny.png",
+          image: "/images/sheweny.png",
           description:
             "Sheweny is a powerful framework to create discord bot with discord.js in Javascript or Typescript. It's a modular and easy to use.",
           link: "https://github.com/Sheweny/framework",
@@ -56,7 +56,7 @@ export default {
         {
           name: "Werewolf-bot",
           date: "May 2022 to now",
-          image: "/public/images/werewolf.png",
+          image: "/images/werewolf-bot.png",
           description:
             "Werewolf bot is a french discord bot to play werewolf games with new discord features (emojis, embeds, buttons, select-menus...)",
           link: "https://github.com/Smaug6739/Werewolf-bot",
