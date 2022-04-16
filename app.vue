@@ -2,7 +2,6 @@
   <div>
     <Navbar />
     <NuxtPage />
-    <div>My footer</div>
   </div>
 </template>
 <script>

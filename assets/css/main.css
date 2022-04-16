@@ -4,8 +4,9 @@
 }
 
 body {
-  background-color: #131313;
+  background-color: #0e0c0c;
   color: #fff;
+  font-size: 1.3rem;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -15,9 +16,14 @@ body {
   flex-direction: column;
 }
 
-h1 {
-  font-size: 72px;
-  background-size: 200% 200%;
+.linear-gradient {
+  background: linear-gradient(45deg, #f7b500, #b620e0, #32c5ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.linear-gradient-inverse {
   background: linear-gradient(-45deg, #f7b500, #b620e0, #32c5ff);
   -webkit-background-clip: text;
   background-clip: text;

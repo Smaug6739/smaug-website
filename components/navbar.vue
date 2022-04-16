@@ -1,33 +1,10 @@
 <template>
   <header class="header">
-    <div>
-      <NuxtLink to="/"
-        ><img src="../../assets/logo.png" alt="logo" class="logo"
-      /></NuxtLink>
-    </div>
     <nav>
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn"
-        ><span class="navicon"></span
-      ></label>
-      <ul class="menu">
-        <li class="link">
-          <NuxtLink to="/" class="nav-links" @click="close">Home</NuxtLink>
-        </li>
-        <li class="link" @click="close">
-          <NuxtLink to="/projects/1">Projects</NuxtLink>
-        </li>
-        <li class="link" @click="close">
-          <NuxtLink to="/about">About</NuxtLink>
-        </li>
-        <li class="link">
-          <a
-            href="https://github.com/Smaug6739"
-            target="__blank"
-            class="nav-links"
-            @click="close"
-            >Github</a
-          >
+      <h4>smaug-6739.dev</h4>
+      <ul>
+        <li>
+          <NuxtLink to="mailto:raphael.veauville@gmail.com">Contact</NuxtLink>
         </li>
       </ul>
     </nav>
@@ -36,123 +13,32 @@
 
 <style scoped lang="scss">
 @import "../assets/scss/theme-variables.scss";
-.header {
-  background-color: $background-element;
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
-  //position: fixed;
-  width: 100%;
-  z-index: 3;
+nav {
   display: flex;
-  .logo {
-    width: 30px;
-    height: 35px;
-    position: absolute;
-    font-size: 1em;
-    padding: 10px 20px;
-  }
-  nav {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
-    background-color: $background-element;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-  li {
-    a {
-      display: block;
-      padding: 20px 20px;
-      border-right: 1px solid #ffffff;
-      text-decoration: none;
-      font-size: 18px;
-    }
-    .NuxtLink-exact-active {
-      color: white;
-    }
-  }
-  .menu {
-    clear: both;
-    max-height: 0;
-    transition: max-height 0.2s ease-out;
-  }
-  .menu-icon {
-    cursor: pointer;
-    padding: 28px 20px;
-    align-self: flex-end;
-    user-select: none;
-  }
-  .menu-icon .navicon {
-    background: #ffffff;
-    display: block;
-    height: 2px;
-    position: relative;
-    align-self: flex-start;
-    transition: background 0.2s ease-out;
-    width: 18px;
-  }
-  .menu-btn {
-    display: none;
-  }
-  .menu-icon .navicon:before,
-  .menu-icon .navicon:after {
-    background: #ffffff;
-    content: "";
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all 0.2s ease-out;
-    width: 100%;
-  }
-  .menu-btn:checked ~ .menu {
-    // One item = 68px
-    max-height: 272px;
-  }
-  .menu-icon .navicon:before {
-    top: 5px;
-  }
-  .menu-icon .navicon:after {
-    top: -5px;
-  }
-  .menu-btn:checked ~ .menu-icon .navicon {
-    background: transparent;
-  }
-  .menu-btn:checked ~ .menu-icon .navicon:before {
-    transform: rotate(-45deg);
-  }
-  .menu-btn:checked ~ .menu-icon .navicon:after {
-    transform: rotate(45deg);
-  }
-  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-    top: 0;
+  justify-content: space-between;
+  margin-top: 1.2%;
+  margin-bottom: 4%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  li > a {
+    color: $secondary;
+    text-decoration: none;
+    font-weight: 700;
   }
 }
-/* 48em = 768px */
-@media (min-width: 48em) {
-  .header ul {
-    flex-direction: row;
-  }
-  .header li {
-    float: left;
-  }
-  .header li a {
-    padding: 20px 30px;
-  }
-  .header .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  .header .menu-icon {
-    display: none;
-  }
+
+ul > li > a:hover {
+  color: $secondary;
+  text-decoration: underline;
+  font-weight: 700;
 }
 </style>
 
@@ -160,13 +46,5 @@
 export default {
   name: "Navbar",
   component: true,
-  methods: {
-    close() {
-      const menu = document.getElementsByClassName("menu")[0];
-      menu.style.clear = "both";
-      menu.style.transition = "max-height 0.2s ease-out";
-      document.getElementById("menu-btn").checked = false;
-    },
-  },
 };
 </script>
