@@ -7,7 +7,9 @@
       <span class="linear-gradient-inverse">Software </span>Developer
     </h2>
     <div>
+      <hr class="sep" />
       <Projects />
+      <hr class="sep" />
     </div>
   </div>
 </template>

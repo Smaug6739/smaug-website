@@ -1,10 +1,30 @@
 <template>
-  <div>
-    <div class="projects" v-for="item of projects" :key="item.name">
-      <Project :data="item" />
-    </div>
+  <div class="projects">
+    <Project
+      v-for="item of projects"
+      :key="item.name"
+      class="pjs"
+      :project="item"
+    />
   </div>
 </template>
+<style lang="scss" scoped>
+// .projects {
+//   display: block;
+//   width: 80%;
+//   height: 100%;
+// }
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch !important;
+}
+.pjs {
+  align-self: stretch;
+}
+</style>
 <script>
 import Project from "@/components/project.component.vue";
 
@@ -24,7 +44,8 @@ export default {
         },
         {
           name: "Project 2",
-          description: "This is the second project",
+          description:
+            "This is the second project<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description<br>It's a long description",
           link: "",
         },
         {
