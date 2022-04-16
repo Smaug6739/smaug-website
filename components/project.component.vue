@@ -1,21 +1,21 @@
 <template>
   <div class="project">
     <div class="project__header">
-      <div>
-        <img :src="project.image" alt="Project icon" />
-      </div>
+      <img :src="project.image" alt="Project icon" />
       <div class="project__header-title">
         <p class="date">{{ project.date }}</p>
         <h3>{{ project.name }}</h3>
       </div>
     </div>
-    <hr />
 
     <div class="project__content">
       <div class="project__content-description">
         <p>{{ project.description }}</p>
       </div>
     </div>
+    <hr />
+
+    <div class="project__footer">Footer</div>
   </div>
 </template>
 <style lang="scss" scoped>
@@ -27,12 +27,12 @@
   border-radius: 3%;
   background-color: $dark;
   padding: 5px;
+  text-align: left;
 }
 .project__header {
   display: flex;
   align-items: center;
   padding: 8px;
-  text-align: left;
   img {
     width: 50px;
     height: 50px;
@@ -42,14 +42,19 @@
 
   .date {
     font-size: 0.8rem;
-    color: $light;
+    color: $secondary;
   }
 }
 .project__content {
   .project__content-description {
     padding: 5px;
     text-align: left;
+    color: $secondary;
   }
+}
+hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 </style>
 <script>
