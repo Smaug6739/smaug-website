@@ -1,5 +1,6 @@
 <template>
   <div class="projects">
+    <!-- <img src="/images/bg_gradient.svg" class="bg_gradient" /> -->
     <Project
       v-for="item of projects"
       :key="item.name"
@@ -24,6 +25,13 @@
 .pjs {
   align-self: stretch;
 }
+// .bg_gradient {
+//   position: absolute;
+//   width: 45rem;
+//   top: 20rem;
+//   left: -13rem;
+//   z-index: -1;
+// }
 </style>
 <script>
 import Project from "@/components/project.component.vue";
@@ -44,6 +52,7 @@ export default {
           description:
             "Eodomius is an open-source instant-chat with web client and application with Qt (C++) built with a micro-service architecture.",
           link: "https://github.com/Eodomius",
+          badges: ["javascript", "typescript"],
         },
         {
           name: "Sheweny framework",

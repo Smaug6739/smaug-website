@@ -15,7 +15,9 @@
     </div>
     <hr />
 
-    <div class="project__footer">Footer</div>
+    <div class="project__footer">
+      <Badge v-for="badge of project.badges" :key="badge" :name="badge" />
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>
@@ -25,9 +27,10 @@
   flex-direction: column;
   width: 25%;
   border-radius: 3%;
-  background-color: $dark;
-  padding: 5px;
+  background-color: $dark-dimmed-1;
+  padding: 15px;
   text-align: left;
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 .project__header {
   display: flex;
@@ -39,6 +42,9 @@
     border-radius: 10%;
     margin-right: 10px;
   }
+  .project__header-title {
+    padding: 5px;
+  }
 
   .date {
     font-size: 0.8rem;
@@ -49,18 +55,32 @@
   .project__content-description {
     padding: 5px;
     text-align: left;
-    color: $secondary;
+    color: $font-text;
   }
 }
 hr {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background: linear-gradient(45deg, #f7b500, #b620e0, #32c5ff);
+  height: 1px;
+  border: none;
+}
+.project__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px;
 }
 </style>
 <script>
+import Badge from "@/components/badge.component.vue";
 export default {
   name: "Project",
   component: true,
+  components: {
+    Badge,
+  },
   props: {
     project: {
       type: Object,
