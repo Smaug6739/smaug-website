@@ -36,9 +36,7 @@ ul {
 }
 
 ul > li > a:hover {
-  color: $secondary;
-  text-decoration: underline;
-  font-weight: 700;
+  color: $secondary-hover;
 }
 </style>
 

@@ -1,26 +1,61 @@
 <template>
   <div class="projects">
     <!-- <img src="/images/bg_gradient.svg" class="bg_gradient" /> -->
-    <Project
-      v-for="item of projects"
-      :key="item.name"
-      class="pjs"
-      :project="item"
-    />
+    <div class="line">
+      <Project
+        v-for="item of line1"
+        :key="item.name"
+        class="pjs"
+        :project="item"
+      />
+    </div>
+
+    <div class="line">
+      <Project
+        v-for="item of line2"
+        :key="item.name"
+        class="pjs"
+        :project="item"
+      />
+      <div class="infos">
+        <h3>Personal experience</h3>
+        <p>
+          I try to share my creations as much as possible to help people who may
+          need it <br />
+          99% of my projects are open source ❤️
+        </p>
+      </div>
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>
+@import "@/assets/scss/theme-variables.scss";
+
 // .projects {
 //   display: block;
 //   width: 80%;
 //   height: 100%;
 // }
-.projects {
+.line {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   align-items: stretch;
+  margin-bottom: 2rem;
+}
+.infos {
+  width: 25%;
+  padding: 15px;
+  text-align: right;
+  color: $font-text;
+  font-family: inherit;
+  line-height: 1.6;
+  h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
 }
 .pjs {
   align-self: stretch;
@@ -44,10 +79,10 @@ export default {
   },
   data() {
     return {
-      projects: [
+      line1: [
         {
           name: "Eodomius chat",
-          date: "January 2022 to now",
+          date: "January 2022 to Now",
           image: "/images/eodomius.png",
           description:
             "Eodomius is an open-source instant-chat with web client and application with Qt (C++) built with a micro-service architecture.",
@@ -56,7 +91,7 @@ export default {
         },
         {
           name: "Sheweny framework",
-          date: "August 2021 to now",
+          date: "August 2021 to Now",
           image: "/images/sheweny.png",
           description:
             "Sheweny is a powerful framework to create discord bot with discord.js in Javascript or Typescript. It's a modular and easy to use.",
@@ -65,12 +100,32 @@ export default {
         },
         {
           name: "Werewolf-bot",
-          date: "May 2022 to now",
+          date: "May 2022 to Now",
           image: "/images/werewolf-bot.png",
           description:
             "Werewolf bot is a french discord bot to play werewolf games with new discord features (emojis, embeds, buttons, select-menus...)",
           link: "https://github.com/Smaug6739/Werewolf-bot",
           badges: ["javascript", "typescript", "nodejs", "git"],
+        },
+      ],
+      line2: [
+        {
+          name: "Smaug website",
+          date: "April 16 2022 to Now",
+          image: "/images/smaug-website.png",
+          description:
+            "My personal website where you can find my projects. Website build with Nuxt.js & Vue.js.",
+          link: "https://github.com/smaug-website",
+          badges: ["javascript", "vuejs", "nuxt", "git"],
+        },
+        {
+          name: "Go router",
+          date: "March 2022 to Now",
+          image: "/images/go-router.png",
+          description:
+            "This project is a simple router written in go build with regular expressions.",
+          link: "https://github.com/Eodomius/router",
+          badges: ["go", "git"],
         },
       ],
     };
