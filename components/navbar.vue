@@ -4,10 +4,16 @@
       <h4>smaug-6739.dev</h4>
       <ul>
         <li>
+          <NuxtLink to="#projects">Projects</NuxtLink>
+        </li>
+        <li>
           <NuxtLink to="mailto:raphael.veauville@gmail.com">Contact</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="mailto:raphael.veauville@gmail.com" class="btn"
+          <NuxtLink
+            to="https://github.com/Smaug6739"
+            target="__blank"
+            class="btn"
             >View my Github</NuxtLink
           >
         </li>
@@ -42,6 +48,9 @@ ul {
       color: $secondary;
       text-decoration: none;
       font-weight: 700;
+      &:hover {
+        color: $secondary-hover;
+      }
     }
   }
 }
@@ -51,9 +60,9 @@ ul {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 200;
-}
-ul > li > a:hover {
-  color: $secondary-hover;
+  &:hover {
+    color: white;
+  }
 }
 </style>
 

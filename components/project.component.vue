@@ -10,7 +10,7 @@
 
     <div class="project__content">
       <div class="project__content-description">
-        <p>{{ project.description }}</p>
+        <p v-html="project.description"></p>
       </div>
     </div>
     <hr />
@@ -29,8 +29,9 @@
 @import "@/assets/scss/theme-variables.scss";
 .project {
   display: flex;
+
   flex-direction: column;
-  width: 25%;
+
   border-radius: 3%;
   background-color: $dark-dimmed-1;
   padding: 15px;

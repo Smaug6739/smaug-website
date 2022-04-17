@@ -5,7 +5,7 @@
       <Project
         v-for="item of line1"
         :key="item.name"
-        class="pjs"
+        class="block"
         :project="item"
       />
     </div>
@@ -14,10 +14,10 @@
       <Project
         v-for="item of line2"
         :key="item.name"
-        class="pjs"
+        class="block"
         :project="item"
       />
-      <div class="infos">
+      <div class="infos block">
         <h3>Personal experiences</h3>
         <p>
           I try to share my creations as much as possible to help people who may
@@ -36,13 +36,14 @@
 //   width: 80%;
 //   height: 100%;
 // }
+.projects {
+  display: flex;
+  flex-direction: column;
+}
 .line {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
   justify-content: space-around;
-  align-items: stretch;
-  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
 }
 .infos {
   width: 25%;
@@ -57,16 +58,13 @@
     margin-bottom: 0.5rem;
   }
 }
-.pjs {
+
+.block {
+  width: 25%;
+  margin: 25px;
+  min-width: 400px;
   align-self: stretch;
 }
-// .bg_gradient {
-//   position: absolute;
-//   width: 45rem;
-//   top: 20rem;
-//   left: -13rem;
-//   z-index: -1;
-// }
 </style>
 <script>
 import Project from "@/components/project.component.vue";
@@ -114,7 +112,7 @@ export default {
           date: "April 16 2022 to Now",
           image: "/images/smaug-website.png",
           description:
-            "My personal website where you can find my projects. Website build with Nuxt.js & Vue.js.",
+            "My personal website where you can find my projects.<br />Website build with Nuxt.js & Vue.js.",
           link: "https://github.com/smaug-website",
           badges: ["javascript", "vuejs", "nuxt", "git"],
         },
@@ -123,7 +121,7 @@ export default {
           date: "March 2022 to Now",
           image: "/images/go-router.png",
           description:
-            "This project is a simple router written in go build with regular expressions.",
+            "This project is a simple router written in go.<br />The router use regular expression to match the url and call the right function.",
           link: "https://github.com/Eodomius/router",
           badges: ["go", "git"],
         },
