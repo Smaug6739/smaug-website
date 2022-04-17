@@ -1,5 +1,5 @@
 <template>
-  <div class="project">
+  <div class="project" @mouseenter="mouseEnter" @mouseleave="mouseLeave">
     <div class="project__header">
       <img :src="project.image" alt="Project icon" />
       <div class="project__header-title">
@@ -16,7 +16,12 @@
     <hr />
 
     <div class="project__footer">
-      <Badge v-for="badge of project.badges" :key="badge" :name="badge" />
+      <Badge
+        v-for="badge of project.badges"
+        :key="badge"
+        :name="badge"
+        :parentMouse="over"
+      />
     </div>
   </div>
 </template>
@@ -85,6 +90,19 @@ export default {
     project: {
       type: Object,
       required: true,
+    },
+  },
+  data() {
+    return {
+      over: false,
+    };
+  },
+  methods: {
+    mouseEnter() {
+      this.over = true;
+    },
+    mouseLeave() {
+      this.over = false;
     },
   },
 };

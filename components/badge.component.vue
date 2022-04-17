@@ -1,8 +1,9 @@
-<template>
+<template ref="badge">
   <span class="bg">
     <img
       v-bind:src="'/icons/' + name + '-icon.svg'"
       class="icon"
+      ref="bgImage"
       @mouseenter="show"
       @mouseleave="hide"
     />
@@ -17,14 +18,17 @@
 .bg {
   position: relative;
 }
+
 .icon {
   width: 30px;
   height: 30px;
   opacity: 0.5;
+  transition: opacity 0.5s;
 }
 
 .bubble-text {
   opacity: 0;
+  transition: opacity 0.5s;
   font-weight: 200 !important;
   font-size: 1rem;
   position: absolute;
@@ -36,8 +40,8 @@
   padding-right: 10px;
   border-radius: 0.7rem;
 }
+
 .view {
-  transition: opacity 0.5s;
   opacity: 1;
 }
 
@@ -56,14 +60,13 @@
 export default {
   name: "Badge",
   component: true,
-  data() {
-    return {
-      over: false,
-    };
-  },
   props: {
     name: {
       type: String,
+      required: true,
+    },
+    parentMouse: {
+      type: Boolean,
       required: true,
     },
   },
@@ -73,6 +76,15 @@ export default {
     },
     hide() {
       this.$refs.bg.classList.remove("view");
+    },
+  },
+  watch: {
+    parentMouse: function () {
+      if (this.parentMouse) {
+        this.$refs.bgImage.classList.add("view");
+      } else {
+        this.$refs.bgImage.classList.remove("view");
+      }
     },
   },
 };
