@@ -60,9 +60,10 @@
   }
 }
 .project__content {
+  margin-top: 2px;
   .project__content-description {
     padding: 5px;
-    text-align: left;
+    text-align: justify;
     color: $font-text;
   }
 }

@@ -70,6 +70,7 @@ export default {
           description:
             "Werewolf bot is a french discord bot to play werewolf games with new discord features (emojis, embeds, buttons, select-menus...)",
           link: "https://github.com/Smaug6739/Werewolf-bot",
+          badges: ["javascript", "typescript", "nodejs", "git"],
         },
       ],
     };
