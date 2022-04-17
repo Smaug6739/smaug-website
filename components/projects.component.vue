@@ -18,7 +18,7 @@
         :project="item"
       />
       <div class="infos">
-        <h3>Personal experience</h3>
+        <h3>Personal experiences</h3>
         <p>
           I try to share my creations as much as possible to help people who may
           need it <br />
@@ -42,7 +42,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: stretch;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 .infos {
   width: 25%;
