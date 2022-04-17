@@ -37,6 +37,9 @@
   text-align: left;
   font-family: Arial, Helvetica, sans-serif !important;
 }
+.project:hover {
+  cursor: pointer;
+}
 .project__header {
   display: flex;
   align-items: center;

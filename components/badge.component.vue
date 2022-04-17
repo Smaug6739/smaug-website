@@ -19,6 +19,7 @@
 @import "../assets/scss/theme-variables.scss";
 .bg {
   position: relative;
+  padding: 0 0.2rem 0rem 0.2rem;
 }
 
 .icon {
@@ -35,11 +36,7 @@
   font-size: 1rem;
   position: absolute;
   background: $dark-dimmed-2;
-  color: #fff;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 5px 10px 5px 10px;
   border-radius: 0.7rem;
 }
 

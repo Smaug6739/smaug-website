@@ -52,7 +52,7 @@ export default {
           description:
             "Eodomius is an open-source instant-chat with web client and application with Qt (C++) built with a micro-service architecture.",
           link: "https://github.com/Eodomius",
-          badges: ["javascript", "typescript"],
+          badges: ["javascript", "typescript", "go", "cpp", "git"],
         },
         {
           name: "Sheweny framework",
@@ -61,6 +61,7 @@ export default {
           description:
             "Sheweny is a powerful framework to create discord bot with discord.js in Javascript or Typescript. It's a modular and easy to use.",
           link: "https://github.com/Sheweny/framework",
+          badges: ["javascript", "typescript", "nodejs", "git"],
         },
         {
           name: "Werewolf-bot",
