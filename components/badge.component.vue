@@ -8,7 +8,9 @@
       @mouseleave="hide"
     />
     <div class="bubble">
-      <span class="bubble-text" ref="bg">Javascript</span>
+      <span class="bubble-text" ref="bg">
+        {{ capitalizeFirstLetter(name) }}
+      </span>
     </div>
   </span>
 </template>
@@ -51,7 +53,7 @@
   border-right: 12px solid transparent;
   border-bottom: 12px solid $dark-dimmed-2;
   position: absolute;
-  top: -10px;
+  top: -5px;
   left: 6px;
 }
 </style>
@@ -76,6 +78,9 @@ export default {
     },
     hide() {
       this.$refs.bg.classList.remove("view");
+    },
+    capitalizeFirstLetter(string) {
+      return string.charAt(0).toUpperCase() + string.slice(1);
     },
   },
   watch: {
