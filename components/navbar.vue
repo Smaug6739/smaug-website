@@ -1,21 +1,18 @@
 <template>
   <header class="header">
     <nav>
-      <h4>smaug-6739.dev</h4>
+      <NuxtLink class="w-link" to="https://smaug-6739.dev"
+        >smaug-6739.dev</NuxtLink
+      >
       <ul>
         <li>
-          <NuxtLink to="#projects">Projects</NuxtLink>
+          <NuxtLink to="/">Projects</NuxtLink>
         </li>
         <li>
           <NuxtLink to="mailto:raphael.veauville@gmail.com">Contact</NuxtLink>
         </li>
         <li>
-          <NuxtLink
-            to="https://github.com/Smaug6739"
-            target="__blank"
-            class="btn"
-            >View my Github</NuxtLink
-          >
+          <NuxtLink to="https://github.com/Smaug6739">Github</NuxtLink>
         </li>
       </ul>
     </nav>
@@ -23,7 +20,7 @@
 </template>
 
 <style scoped lang="scss">
-@import "../assets/scss/theme-variables.scss";
+@import "../assets/scss/theme-variables";
 nav {
   display: flex;
   justify-content: space-between;
@@ -32,36 +29,32 @@ nav {
   margin-right: 5%;
   margin-left: 5%;
 }
-ul,
-li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 ul {
   display: flex;
-  align-items: stretch;
-  li {
-    padding: 0.375rem 0.75rem;
-    a {
-      padding: 0.8rem;
-      color: $secondary;
-      text-decoration: none;
-      font-weight: 700;
-      &:hover {
-        color: $secondary-hover;
-      }
-    }
+  justify-content: flex-end;
+}
+a {
+  padding: 0.8rem;
+  color: $secondary;
+  text-decoration: none;
+  font-weight: 700;
+  &:hover {
+    color: $secondary-hover;
   }
 }
-.btn {
-  border-radius: 1.5rem;
-  background: linear-gradient(to right, #f7b500, #b620e0, #32c5ff);
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 200;
+.w-link {
+  color: $white;
   &:hover {
-    color: white;
+    color: $white;
+  }
+}
+/* 48em = 768px */
+@media (max-width: 48em) {
+  .w-link {
+    display: none;
+  }
+  nav {
+    justify-content: center;
   }
 }
 </style>
@@ -69,6 +62,5 @@ ul {
 <script>
 export default {
   name: "Navbar",
-  component: true,
 };
 </script>

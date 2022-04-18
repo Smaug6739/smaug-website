@@ -3,16 +3,7 @@
     <!-- <img src="/images/bg_gradient.svg" class="bg_gradient" /> -->
     <div class="line">
       <Project
-        v-for="item of line1"
-        :key="item.name"
-        class="block"
-        :project="item"
-      />
-    </div>
-
-    <div class="line">
-      <Project
-        v-for="item of line2"
+        v-for="item of projects"
         :key="item.name"
         class="block"
         :project="item"
@@ -31,11 +22,6 @@
 <style lang="scss" scoped>
 @import "@/assets/scss/theme-variables.scss";
 
-// .projects {
-//   display: block;
-//   width: 80%;
-//   height: 100%;
-// }
 .projects {
   display: flex;
   flex-direction: column;
@@ -65,6 +51,11 @@
   min-width: 400px;
   align-self: stretch;
 }
+@media (max-width: 450px) {
+  .block {
+    min-width: 300px;
+  }
+}
 </style>
 <script>
 import Project from "@/components/project.component.vue";
@@ -77,7 +68,7 @@ export default {
   },
   data() {
     return {
-      line1: [
+      projects: [
         {
           name: "Eodomius chat",
           date: "January 2022 to Now",
@@ -105,8 +96,6 @@ export default {
           link: "https://github.com/Smaug6739/Werewolf-bot",
           badges: ["javascript", "typescript", "nodejs", "git"],
         },
-      ],
-      line2: [
         {
           name: "Smaug website",
           date: "April 16 2022 to Now",

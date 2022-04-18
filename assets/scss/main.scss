@@ -12,11 +12,14 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  max-width: 1800px;
-  width: 90%;
-  height: 100vh;
-  margin: auto;
 }
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .linear-gradient {
   background: linear-gradient(45deg, #f7b500, #b620e0, #32c5ff);
   -webkit-background-clip: text;

@@ -29,9 +29,7 @@
 @import "@/assets/scss/theme-variables.scss";
 .project {
   display: flex;
-
   flex-direction: column;
-
   border-radius: 3%;
   background-color: $dark-dimmed-1;
   padding: 15px;
