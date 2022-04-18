@@ -49,7 +49,7 @@
 .block {
   width: 25%;
   margin: 25px;
-  min-width: 400px;
+  min-width: 350px;
   align-self: stretch;
 }
 @media (max-width: 450px) {

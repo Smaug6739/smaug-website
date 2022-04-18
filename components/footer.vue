@@ -2,8 +2,8 @@
   <footer>
     <hr />
     <div>
-      <p>smaug-6739.dev</p>
-      <p>Developed and designed by Smaug with ❤️</p>
+      <p class="p1">smaug-6739.dev</p>
+      <p class="p2">Developed and designed by Smaug with ❤️</p>
     </div>
   </footer>
 </template>
@@ -18,6 +18,12 @@ div {
   display: flex;
   justify-content: space-between;
   color: $font-text;
+}
+.p1 {
+  max-width: 40%;
+}
+.p2 {
+  max-width: 60%;
 }
 </style>
 <script>
