@@ -12,7 +12,7 @@
         <h3>Personal experiences</h3>
         <p>
           I try to share my creations as much as possible to help people who may
-          need it <br />
+          need it. <br />
           99% of my projects are open source ❤️
         </p>
       </div>
@@ -103,7 +103,7 @@ export default {
           description:
             "My personal website where you can find my projects.<br />Website build with Nuxt.js & Vue.js.",
           link: "https://github.com/smaug-website",
-          badges: ["javascript", "vuejs", "nuxt", "git"],
+          badges: ["html", "css", "javascript", "vuejs", "nuxt", "git"],
         },
         {
           name: "Go router",

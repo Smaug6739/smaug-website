@@ -45,7 +45,6 @@
   padding: 8px;
   img {
     width: 50px;
-    height: 50px;
     border-radius: 10%;
     margin-right: 10px;
   }
