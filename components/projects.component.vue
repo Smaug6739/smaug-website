@@ -1,5 +1,6 @@
 <template>
   <div class="projects">
+    <hr class="sep" />
     <!-- <img src="/images/bg_gradient.svg" class="bg_gradient" /> -->
     <div class="line">
       <Project

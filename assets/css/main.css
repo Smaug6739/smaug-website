@@ -13,6 +13,7 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 ul,
@@ -38,6 +39,20 @@ li {
 
 .sep {
   margin: 3% 0% 3% 0%;
+}
+
+.max-container {
+  max-width: 1800px;
+  width: 90%;
+  margin: auto;
+}
+
+hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background: linear-gradient(45deg, #f7b500, #b620e0, #32c5ff);
+  height: 1px;
+  border: none;
 }
 
 /*# sourceMappingURL=main.css.map */

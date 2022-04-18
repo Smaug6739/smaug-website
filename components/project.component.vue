@@ -34,7 +34,16 @@
   background-color: $dark-dimmed-1;
   padding: 15px;
   text-align: left;
-  font-family: Arial, Helvetica, sans-serif !important;
+  font-family: Arial, Helvetica, sans-serif;
+
+  // Selection
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .project:hover {
   cursor: pointer;
@@ -62,16 +71,11 @@
   .project__content-description {
     padding: 5px;
     text-align: justify;
+    word-break: break-all; // remove the white space between words
     color: $font-text;
   }
 }
-hr {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  background: linear-gradient(45deg, #f7b500, #b620e0, #32c5ff);
-  height: 1px;
-  border: none;
-}
+
 .project__footer {
   display: flex;
   flex-wrap: wrap;

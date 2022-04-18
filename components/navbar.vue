@@ -12,7 +12,9 @@
           <NuxtLink to="mailto:raphael.veauville@gmail.com">Contact</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="https://github.com/Smaug6739">Github</NuxtLink>
+          <NuxtLink to="https://github.com/Smaug6739" class="btn"
+            >Github</NuxtLink
+          >
         </li>
       </ul>
     </nav>
@@ -28,16 +30,17 @@ nav {
   margin-bottom: 4%;
   margin-right: 5%;
   margin-left: 5%;
+  font-weight: bolder;
 }
 ul {
   display: flex;
   justify-content: flex-end;
 }
+
 a {
-  padding: 0.8rem;
+  padding: 0.7rem;
   color: $secondary;
   text-decoration: none;
-  font-weight: 700;
   &:hover {
     color: $secondary-hover;
   }
@@ -48,6 +51,12 @@ a {
     color: $white;
   }
 }
+.btn {
+  background: linear-gradient(to right, #f7b500, #b620e0, #32c5ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 /* 48em = 768px */
 @media (max-width: 48em) {
   .w-link {
@@ -55,6 +64,7 @@ a {
   }
   nav {
     justify-content: center;
+    margin-bottom: 8%;
   }
 }
 </style>
