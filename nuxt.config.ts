@@ -11,5 +11,4 @@ export default defineNuxtConfig({
       content: "my website description",
     },
   ],
-  target: "static",
 });
