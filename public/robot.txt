@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://smaug-6739.com/sitemap.txt
