@@ -7,8 +7,6 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Deploy to production
-        env:
-         SSH_PASSPHRASE: ${{secrets.PASSPHRASE}}
         run: |
           cd /home/smaug/sites/smaug-website/
           git stash
