@@ -8,8 +8,8 @@ jobs:
     steps:
       - name: Deploy to production
         run: |
-          ssh -vT git@github.com
           cd /home/smaug/sites/smaug-website/
+          ssh -vT git@github.com
           git stash
           git pull origin main
           yarn
