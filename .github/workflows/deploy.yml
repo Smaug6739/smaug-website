@@ -9,7 +9,7 @@ jobs:
       - name: Deploy to production
         run: |
           cd /home/smaug/sites/smaug-website/
-          ssh -vT git@github.com
+          ssh -vv git@github.com
           git stash
           git pull origin main
           yarn
