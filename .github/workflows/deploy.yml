@@ -13,4 +13,4 @@ jobs:
           git pull origin main
           yarn
           yarn build
-          pm2 reload prod.ecosystem.config.js
+          pm2 reload ecosystem.config.js
