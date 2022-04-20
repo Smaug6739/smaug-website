@@ -1,0 +1,16 @@
+name: Deploy to production
+on:
+  push:
+    branches: [dev]
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - name: Deploy to production
+        run: |
+          cd /home/smaug/sites/smaug-website/
+          git stash
+          git pull origin main
+          yarn
+          yarn build
+          pm2 reload 0
