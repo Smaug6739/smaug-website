@@ -23,7 +23,7 @@ export default defineNuxtConfig({
         {
           hid: "og:image",
           property: "og:image",
-          content: `/seo/image.png`,
+          content: `/seo/img.png`,
         },
         {
           hid: "og:description",
@@ -39,7 +39,7 @@ export default defineNuxtConfig({
         {
           hid: "twitter:card",
           property: "twitter:card",
-          content: `/seo/image.png`,
+          content: `/seo/img.png`,
         },
         {
           hid: "twitter:creator",
