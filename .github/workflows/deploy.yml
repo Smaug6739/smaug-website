@@ -3,16 +3,14 @@ on:
   push:
     branches: [main]
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-
+  build:
+    runs-on: self-hosted
     steps:
-      - uses: actions/checkout@v2
-        with:
-          # fetch all commits to get last updated time or other git log info
-          fetch-depth: 0
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v3.1.1
-      - name: Pack
-        run : |
-          npm pack
+      - name: Deploy to production
+        run: |
+          cd /home/smaug/sites/smaug-website/
+          git stash
+          git pull origin main
+          yarn
+          yarn build
+          pm2 reload ecosystem.config.js
