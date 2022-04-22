@@ -33,6 +33,11 @@ export default defineNuxtConfig({
           content: `https://smaug-6739.com`,
         },
         {
+          hid: "og:keywords",
+          name: "og:keywords",
+          content: "Developer, Full-Stack, Software, Smaug#6739",
+        },
+        {
           hid: "og:image",
           property: "og:image",
           content: `/seo/img.png`,
@@ -62,10 +67,15 @@ export default defineNuxtConfig({
         {
           hid: "twitter:card",
           property: "twitter:card",
-          content: `/seo/img.png`,
+          content: `summary_large_image`,
         },
         {
           hid: "twitter:image",
+          property: "twitter:image",
+          content: `/seo/img.png`,
+        },
+        {
+          hid: "twitter:image:src",
           property: "twitter:image",
           content: `/seo/img.png`,
         },
