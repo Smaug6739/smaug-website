@@ -4,12 +4,13 @@ on:
     branches: [main]
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
-      - name: Setup Node.js
-          uses: actions/setup-node@v2
-          with:
-            node-version: "16"
-      - name: Pack
+      - name: Deploy to production
         run: |
-          npm pack
+          cd /home/smaug/sites/smaug-website/
+          git stash
+          git pull origin main
+          yarn
+          yarn build
+          pm2 reload ecosystem.config.js
