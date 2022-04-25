@@ -3,6 +3,7 @@ import { defineNuxtConfig } from "nuxt3";
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
+  target: "server",
   app: {
     head: {
       title: "Smaug#6739",
@@ -46,32 +47,32 @@ export default defineNuxtConfig({
         // Twitter
         {
           hid: "twitter:title",
-          property: "twitter:title",
+          name: "twitter:title",
           content: `Smaug#6739`,
         },
         {
           hid: "twitter:creator",
-          property: "twitter:creator",
+          name: "twitter:creator",
           content: `Smaug#6739`,
         },
         {
-          hid: "og:url",
-          property: "og:url",
+          hid: "twitter:url",
+          name: "twitter:url",
           content: `https://smaug-6739.com`,
         },
         {
           hid: "twitter:description",
-          property: "twitter:description",
+          name: "twitter:description",
           content: `Hi, I'm Smaug#6739, full-stack developer from France, I develop also software and diffrent libraries.`,
         },
         {
           hid: "twitter:card",
-          property: "twitter:card",
+          name: "twitter:card",
           content: `summary_large_image`,
         },
         {
           hid: "twitter:image",
-          property: "twitter:image",
+          name: "twitter:image",
           content: `/seo/img.png`,
         },
       ],
