@@ -11,6 +11,11 @@ export default defineNuxtConfig({
       charset: "utf-8",
       meta: [
         {
+          hid: "theme-color",
+          name: "theme-color",
+          content: "#0e0c0c",
+        },
+        {
           hid: "description",
           name: "description",
           content:
