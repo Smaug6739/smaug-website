@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   target: "server",
   app: {
     head: {
-      title: "Smaug#6739",
+      title: "Smaug6739",
       viewport: "width=device-width, initial-scale=1",
       charset: "utf-8",
       meta: [
@@ -19,19 +19,19 @@ export default defineNuxtConfig({
           hid: "description",
           name: "description",
           content:
-            "Hi, I'm Smaug#6739, full-stack developer from France, I develop also software and diffrent libraries.",
+            "Hi, I'm Smaug6739, full-stack developer from France, I develop also software and diffrent libraries.",
         },
         // Open Graph / Facebook
         {
           hid: "og:title",
           property: "og:title",
-          content: "Smaug#6739",
+          content: "Smaug6739",
         },
         {
           hid: "og:description",
           property: "og:description",
           content:
-            "Hi, I'm Smaug#6739, full-stack developer from France, I develop also software and diffrent libraries.",
+            "Hi, I'm Smaug6739, full-stack developer from France, I develop also software and diffrent libraries.",
         },
         {
           hid: "og:url",
@@ -41,7 +41,7 @@ export default defineNuxtConfig({
         {
           hid: "og:keywords",
           property: "og:keywords",
-          content: "Developer, Full-Stack, Software, Smaug#6739",
+          content: "Developer, Full-Stack, Software, Smaug6739",
         },
         {
           hid: "og:image",
@@ -53,12 +53,17 @@ export default defineNuxtConfig({
         {
           hid: "twitter:title",
           name: "twitter:title",
-          content: `Smaug#6739`,
+          content: `Smaug6739`,
         },
         {
           hid: "twitter:creator",
           name: "twitter:creator",
-          content: `Smaug#6739`,
+          content: `Smaug6739`,
+        },
+        {
+          hid: "twitter:site",
+          name: "twitter:site",
+          content: `https://smaug-6739.com`,
         },
         {
           hid: "twitter:url",
@@ -68,7 +73,7 @@ export default defineNuxtConfig({
         {
           hid: "twitter:description",
           name: "twitter:description",
-          content: `Hi, I'm Smaug#6739, full-stack developer from France, I develop also software and diffrent libraries.`,
+          content: `Hi, I'm Smaug6739, full-stack developer from France, I develop also software and diffrent libraries.`,
         },
         {
           hid: "twitter:card",
