@@ -74,11 +74,6 @@ export default defineNuxtConfig({
           property: "twitter:image",
           content: `/seo/img.png`,
         },
-        {
-          hid: "twitter:image:src",
-          property: "twitter:image",
-          content: `/seo/img.png`,
-        },
       ],
     },
   },
