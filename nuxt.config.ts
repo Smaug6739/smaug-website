@@ -19,7 +19,7 @@ export default defineNuxtConfig({
         // Open Graph / Facebook
         {
           hid: "og:title",
-          name: "og:title",
+          property: "og:title",
           content: "Smaug#6739",
         },
         {
@@ -35,7 +35,7 @@ export default defineNuxtConfig({
         },
         {
           hid: "og:keywords",
-          name: "og:keywords",
+          property: "og:keywords",
           content: "Developer, Full-Stack, Software, Smaug#6739",
         },
         {
