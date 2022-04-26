@@ -12,7 +12,7 @@ export default defineNuxtConfig({
       meta: [
 
         { name: "robots",  content: "follow, index" },
-        { name: "theme-color",  content: "#0e0c0c" },
+        { name: "theme-color",  content: "#00BFFF" },
         { name: "description",  content:    "Hi, I'm Smaug6739, full-stack developer from France, I develop also software and diffrent libraries." },
 
         // Open Graph / Facebook
