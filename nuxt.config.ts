@@ -22,8 +22,6 @@ export default defineNuxtConfig({
         { property: "og:url",  content: `https://smaug-6739.dev` },
         { property: "og:keywords",  content: "Developer, Full-Stack, Software, Smaug6739" },
         { property: "og:image",  content: `https://smaug-6739.dev/seo/img.png` },
-        { property: "og:image:width", content: "740" },
-        { property: "og:image:height", content: "300" },
 
         // Twitter
         { name: "twitter:title",  content: `Smaug6739` },
