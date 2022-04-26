@@ -21,7 +21,7 @@ export default defineNuxtConfig({
         { property: "og:description", content: "Hi, I'm Smaug6739, full-stack developer from France, I develop also software and diffrent libraries."},
         { property: "og:url",  content: `https://smaug-6739.dev` },
         { property: "og:keywords",  content: "Developer, Full-Stack, Software, Smaug6739" },
-        { property: "og:image",  content: `https://www.vince.cafe/static/images/social-banner.png` },
+        { property: "og:image",  content: `https://smaug-6739.dev/seo/img.png` },
         { property: "og:image:width", content: "740" },
         { property: "og:image:height", content: "300" },
 
@@ -32,7 +32,7 @@ export default defineNuxtConfig({
         { name: "twitter:url",  content: `https://smaug-6739.dev` },
         { name: "twitter:description",  content: `Hi, I'm Smaug6739, full-stack developer from France, I develop also software and diffrent libraries.` },
         { name: "twitter:card",  content: `summary_large_image` },
-        { name: "twitter:image",  content: `https://www.vince.cafe/static/images/social-banner.png` },
+        { name: "twitter:image",  content: `https://smaug-6739.dev/seo/img.png` },
       ],
     },
   },
