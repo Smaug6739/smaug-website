@@ -16,12 +16,15 @@
     <hr />
 
     <div class="project__footer">
-      <Badge
-        v-for="badge of project.badges"
-        :key="badge"
-        :name="badge"
-        :parentMouse="over"
-      />
+      <a :href="project.link" target="__blank">Github</a>
+      <div class="badges">
+        <Badge
+          v-for="badge of project.badges"
+          :key="badge"
+          :name="badge"
+          :parentMouse="over"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -78,10 +81,20 @@
 
 .project__footer {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  padding: 5px;
+  .badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: stretch;
+  }
+}
+
+a {
+  font-size: 1.2rem;
+  color: $secondary;
+  text-decoration: none;
 }
 </style>
 <script>

@@ -103,7 +103,7 @@ export default {
           image: "/images/smaug-website.png",
           description:
             "My personal website where you can find my projects.<br />Website build with Nuxt.js & Vue.js.",
-          link: "https://github.com/smaug-website",
+          link: "https://github.com/Smaug6739/smaug-website",
           badges: ["html", "css", "javascript", "vuejs", "nuxt", "git"],
         },
         {

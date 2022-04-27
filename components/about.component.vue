@@ -1,7 +1,7 @@
 <template>
   <div id="about">
     <div class="description">
-      <h3>About</h3>
+      <h3>About me</h3>
       <p>
         I'm a full-stack developer with a passion for creating beautiful and<br />
         intuitive user experiences.
