@@ -9,6 +9,9 @@ export default defineNuxtConfig({
       title: "Smaug#6739",
       viewport: "width=device-width, initial-scale=1",
       charset: "utf-8",
+      htmlAttrs: {
+        lang: "en"
+      },
       meta: [
 
         { name: "robots",  content: "follow, index" },
