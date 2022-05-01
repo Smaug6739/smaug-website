@@ -2,6 +2,7 @@
   <span class="bg">
     <img
       v-bind:src="'/icons/' + name + '-icon.svg'"
+      v-bind:alt="name"
       class="icon"
       ref="bgImage"
       @mouseenter="show"
