@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   target: "server",
   app: {
     head: {
-      title: "Smaug#6739",
+      title: "Sma6739",
       viewport: "width=device-width, initial-scale=1",
       charset: "utf-8",
       htmlAttrs: {
