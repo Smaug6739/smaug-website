@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <nav class="hamburger-menu">
-      <NuxtLink class="w-link m-link pad" to="/">smaug-6739.dev</NuxtLink>
+      <NuxtLink class="w-link m-link" to="/">smaug-6739.dev</NuxtLink>
 
       <input id="menu__toggle" type="checkbox" />
       <label class="menu__btn" for="menu__toggle">
