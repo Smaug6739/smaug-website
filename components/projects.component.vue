@@ -53,7 +53,12 @@
 }
 @media (max-width: 450px) {
   .block {
-    min-width: 300px;
+    min-width: 350px;
+  }
+}
+@media (max-width: 375px) {
+  .block {
+    min-width: 310px;
   }
 }
 </style>

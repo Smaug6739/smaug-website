@@ -9,7 +9,8 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "nuxt3": "latest",
+    "nuxt": "3.0.0-rc.4",
+    "prettier": "^2.7.1",
     "sass": "^1.50.0"
   }
 }

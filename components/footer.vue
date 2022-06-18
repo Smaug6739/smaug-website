@@ -25,6 +25,15 @@ div {
 .p2 {
   max-width: 60%;
 }
+
+@media (max-width: 48em) {
+  .p1 {
+    display: none;
+  }
+  .p2 {
+    max-width: 100%;
+  }
+}
 </style>
 <script>
 export default {
