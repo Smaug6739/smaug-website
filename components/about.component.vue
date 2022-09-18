@@ -26,18 +26,25 @@ h3,
 p {
   margin-bottom: 1rem;
 }
+
 h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
+
 p {
   font-size: 1.5rem;
+}
+
+p {
+  font-size: 20px;
 }
 
 .description {
   text-align: left;
   line-height: 2rem;
-  width: 60%;
+  width: 70%;
 }
+
 @media (max-width: 48em) {
   .description {
     width: 100%;
