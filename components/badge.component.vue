@@ -1,13 +1,7 @@
 <template ref="badge">
   <span class="bg">
-    <img
-      v-bind:src="'/icons/' + name + '-icon.svg'"
-      v-bind:alt="name"
-      class="icon"
-      ref="bgImage"
-      @mouseenter="show"
-      @mouseleave="hide"
-    />
+    <img v-bind:src="'/icons/' + name + '-icon.svg'" v-bind:alt="name" class="icon" ref="bgImage" @mouseenter="show"
+      @mouseleave="hide" />
     <div class="bubble">
       <span class="bubble-text" ref="bg">
         {{ capitalizeFirstLetter(name) }}
@@ -18,6 +12,7 @@
 
 <style scoped lang="scss">
 @import "../assets/scss/theme-variables.scss";
+
 .bg {
   position: relative;
   padding: 0 0.2rem 0rem 0.2rem;
@@ -32,7 +27,7 @@
 
 .bubble-text {
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity 0.4s;
   font-weight: 200 !important;
   font-size: 1rem;
   position: absolute;

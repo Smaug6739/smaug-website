@@ -51,10 +51,3 @@ p {
   }
 }
 </style>
-
-<script>
-export default {
-  name: "About",
-  component: true,
-};
-</script>

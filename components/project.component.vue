@@ -16,20 +16,16 @@
     <hr />
 
     <div class="project__footer">
-      <a :href="project.link" target="__blank">Github</a>
+      <a :href="project.link" target="__blank" style="font-weight: bolder;font-size: 17px;">Open Github</a>
       <div class="badges">
-        <Badge
-          v-for="badge of project.badges"
-          :key="badge"
-          :name="badge"
-          :parentMouse="over"
-        />
+        <Badge v-for="badge of project.badges" :key="badge" :name="badge" :parentMouse="over" />
       </div>
     </div>
   </div>
 </template>
 <style lang="scss" scoped>
 @import "@/assets/scss/theme-variables.scss";
+
 .project {
   display: flex;
   flex-direction: column;
@@ -48,18 +44,19 @@
   -ms-user-select: none;
   user-select: none;
 }
-.project:hover {
-  cursor: pointer;
-}
+
+
 .project__header {
   display: flex;
   align-items: center;
   padding: 8px;
+
   img {
     width: 50px;
     border-radius: 10%;
     margin-right: 10px;
   }
+
   .project__header-title {
     padding: 5px;
   }
@@ -69,8 +66,10 @@
     color: $secondary;
   }
 }
+
 .project__content {
   margin-top: 2px;
+
   .project__content-description {
     padding: 5px;
     text-align: justify;
@@ -83,6 +82,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   .badges {
     display: flex;
     flex-wrap: wrap;
