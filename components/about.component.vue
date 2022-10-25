@@ -6,7 +6,7 @@
         I'm a full-stack developer with a passion for creating beautiful and<br />
         intuitive user experiences.
         <br />
-        I develop also software applications for desktop in C++ with Qt<br />
+        I also develop software applications for desktop in C++ with Qt<br />
         framework.
       </p>
       <p>
